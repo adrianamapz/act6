@@ -1,0 +1,352 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Wed Nov 29 00:13:18 2023
+# Process ID: 11048
+# Current directory: C:/Users/Adriana Martinez/project_3/project_3.runs/synth_1
+# Command line: vivado.exe -log vga_768x576.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source vga_768x576.tcl
+# Log file: C:/Users/Adriana Martinez/project_3/project_3.runs/synth_1/vga_768x576.vds
+# Journal file: C:/Users/Adriana Martinez/project_3/project_3.runs/synth_1\vivado.jou
+# Running On: DESKTOP-O1P7J12, OS: Windows, CPU Frequency: 2261 MHz, CPU Physical cores: 2, Host memory: 3947 MB
+#-----------------------------------------------------------
+source vga_768x576.tcl -notrace
+create_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 414.223 ; gain = 103.180
+Command: read_checkpoint -auto_incremental -incremental {C:/Users/Adriana Martinez/project_3/project_3.srcs/utils_1/imports/synth_1/prom_initials.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/Adriana Martinez/project_3/project_3.srcs/utils_1/imports/synth_1/prom_initials.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top vga_768x576 -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 2572
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:27 ; elapsed = 00:00:33 . Memory (MB): peak = 1219.883 ; gain = 407.199
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'vga_768x576' [C:/Users/Adriana Martinez/project_3/project_3.srcs/sources_1/new/vga_resolucion.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'vga_768x576' (0#1) [C:/Users/Adriana Martinez/project_3/project_3.srcs/sources_1/new/vga_resolucion.vhd:38]
+WARNING: [Synth 8-3917] design vga_768x576 has port vidon driven by constant 0
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:33 ; elapsed = 00:00:43 . Memory (MB): peak = 1309.520 ; gain = 496.836
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:33 ; elapsed = 00:00:44 . Memory (MB): peak = 1309.520 ; gain = 496.836
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:33 ; elapsed = 00:00:44 . Memory (MB): peak = 1309.520 ; gain = 496.836
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1309.520 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Adriana Martinez/project_3/project_3.srcs/constrs_1/new/projects.xdc]
+WARNING: [Vivado 12-584] No ports matched 'M[0]'. [C:/Users/Adriana Martinez/project_3/project_3.srcs/constrs_1/new/projects.xdc:1]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Adriana Martinez/project_3/project_3.srcs/constrs_1/new/projects.xdc:1]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'M[1]'. [C:/Users/Adriana Martinez/project_3/project_3.srcs/constrs_1/new/projects.xdc:2]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Adriana Martinez/project_3/project_3.srcs/constrs_1/new/projects.xdc:2]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'M[2]'. [C:/Users/Adriana Martinez/project_3/project_3.srcs/constrs_1/new/projects.xdc:3]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Adriana Martinez/project_3/project_3.srcs/constrs_1/new/projects.xdc:3]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'M[3]'. [C:/Users/Adriana Martinez/project_3/project_3.srcs/constrs_1/new/projects.xdc:4]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Adriana Martinez/project_3/project_3.srcs/constrs_1/new/projects.xdc:4]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'M[4]'. [C:/Users/Adriana Martinez/project_3/project_3.srcs/constrs_1/new/projects.xdc:5]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Adriana Martinez/project_3/project_3.srcs/constrs_1/new/projects.xdc:5]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'M[5]'. [C:/Users/Adriana Martinez/project_3/project_3.srcs/constrs_1/new/projects.xdc:6]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Adriana Martinez/project_3/project_3.srcs/constrs_1/new/projects.xdc:6]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'M[6]'. [C:/Users/Adriana Martinez/project_3/project_3.srcs/constrs_1/new/projects.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Adriana Martinez/project_3/project_3.srcs/constrs_1/new/projects.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'M[7]'. [C:/Users/Adriana Martinez/project_3/project_3.srcs/constrs_1/new/projects.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Adriana Martinez/project_3/project_3.srcs/constrs_1/new/projects.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'M[8]'. [C:/Users/Adriana Martinez/project_3/project_3.srcs/constrs_1/new/projects.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Adriana Martinez/project_3/project_3.srcs/constrs_1/new/projects.xdc:9]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'M[9]'. [C:/Users/Adriana Martinez/project_3/project_3.srcs/constrs_1/new/projects.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Adriana Martinez/project_3/project_3.srcs/constrs_1/new/projects.xdc:10]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'M[10]'. [C:/Users/Adriana Martinez/project_3/project_3.srcs/constrs_1/new/projects.xdc:11]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Adriana Martinez/project_3/project_3.srcs/constrs_1/new/projects.xdc:11]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'M[11]'. [C:/Users/Adriana Martinez/project_3/project_3.srcs/constrs_1/new/projects.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Adriana Martinez/project_3/project_3.srcs/constrs_1/new/projects.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'M[12]'. [C:/Users/Adriana Martinez/project_3/project_3.srcs/constrs_1/new/projects.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Adriana Martinez/project_3/project_3.srcs/constrs_1/new/projects.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'M[13]'. [C:/Users/Adriana Martinez/project_3/project_3.srcs/constrs_1/new/projects.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Adriana Martinez/project_3/project_3.srcs/constrs_1/new/projects.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'M[14]'. [C:/Users/Adriana Martinez/project_3/project_3.srcs/constrs_1/new/projects.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Adriana Martinez/project_3/project_3.srcs/constrs_1/new/projects.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'M[15]'. [C:/Users/Adriana Martinez/project_3/project_3.srcs/constrs_1/new/projects.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Adriana Martinez/project_3/project_3.srcs/constrs_1/new/projects.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'M[16]'. [C:/Users/Adriana Martinez/project_3/project_3.srcs/constrs_1/new/projects.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Adriana Martinez/project_3/project_3.srcs/constrs_1/new/projects.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'M[17]'. [C:/Users/Adriana Martinez/project_3/project_3.srcs/constrs_1/new/projects.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Adriana Martinez/project_3/project_3.srcs/constrs_1/new/projects.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'M[18]'. [C:/Users/Adriana Martinez/project_3/project_3.srcs/constrs_1/new/projects.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Adriana Martinez/project_3/project_3.srcs/constrs_1/new/projects.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'M[19]'. [C:/Users/Adriana Martinez/project_3/project_3.srcs/constrs_1/new/projects.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Adriana Martinez/project_3/project_3.srcs/constrs_1/new/projects.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'M[20]'. [C:/Users/Adriana Martinez/project_3/project_3.srcs/constrs_1/new/projects.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Adriana Martinez/project_3/project_3.srcs/constrs_1/new/projects.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'M[21]'. [C:/Users/Adriana Martinez/project_3/project_3.srcs/constrs_1/new/projects.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Adriana Martinez/project_3/project_3.srcs/constrs_1/new/projects.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'M[22]'. [C:/Users/Adriana Martinez/project_3/project_3.srcs/constrs_1/new/projects.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Adriana Martinez/project_3/project_3.srcs/constrs_1/new/projects.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'M[23]'. [C:/Users/Adriana Martinez/project_3/project_3.srcs/constrs_1/new/projects.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Adriana Martinez/project_3/project_3.srcs/constrs_1/new/projects.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'M[24]'. [C:/Users/Adriana Martinez/project_3/project_3.srcs/constrs_1/new/projects.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Adriana Martinez/project_3/project_3.srcs/constrs_1/new/projects.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'M[25]'. [C:/Users/Adriana Martinez/project_3/project_3.srcs/constrs_1/new/projects.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Adriana Martinez/project_3/project_3.srcs/constrs_1/new/projects.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'M[26]'. [C:/Users/Adriana Martinez/project_3/project_3.srcs/constrs_1/new/projects.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Adriana Martinez/project_3/project_3.srcs/constrs_1/new/projects.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'M[27]'. [C:/Users/Adriana Martinez/project_3/project_3.srcs/constrs_1/new/projects.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Adriana Martinez/project_3/project_3.srcs/constrs_1/new/projects.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'M[28]'. [C:/Users/Adriana Martinez/project_3/project_3.srcs/constrs_1/new/projects.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Adriana Martinez/project_3/project_3.srcs/constrs_1/new/projects.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'M[29]'. [C:/Users/Adriana Martinez/project_3/project_3.srcs/constrs_1/new/projects.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Adriana Martinez/project_3/project_3.srcs/constrs_1/new/projects.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'M[30]'. [C:/Users/Adriana Martinez/project_3/project_3.srcs/constrs_1/new/projects.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Adriana Martinez/project_3/project_3.srcs/constrs_1/new/projects.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'M[31]'. [C:/Users/Adriana Martinez/project_3/project_3.srcs/constrs_1/new/projects.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Adriana Martinez/project_3/project_3.srcs/constrs_1/new/projects.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'addr[3]'. [C:/Users/Adriana Martinez/project_3/project_3.srcs/constrs_1/new/projects.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Adriana Martinez/project_3/project_3.srcs/constrs_1/new/projects.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'addr[2]'. [C:/Users/Adriana Martinez/project_3/project_3.srcs/constrs_1/new/projects.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Adriana Martinez/project_3/project_3.srcs/constrs_1/new/projects.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'addr[1]'. [C:/Users/Adriana Martinez/project_3/project_3.srcs/constrs_1/new/projects.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Adriana Martinez/project_3/project_3.srcs/constrs_1/new/projects.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'addr[0]'. [C:/Users/Adriana Martinez/project_3/project_3.srcs/constrs_1/new/projects.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Adriana Martinez/project_3/project_3.srcs/constrs_1/new/projects.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/Adriana Martinez/project_3/project_3.srcs/constrs_1/new/projects.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1343.176 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.102 . Memory (MB): peak = 1343.176 ; gain = 0.000
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:54 ; elapsed = 00:01:09 . Memory (MB): peak = 1343.176 ; gain = 530.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:54 ; elapsed = 00:01:09 . Memory (MB): peak = 1343.176 ; gain = 530.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:54 ; elapsed = 00:01:09 . Memory (MB): peak = 1343.176 ; gain = 530.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Preparing Guide Design
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-6895] The reference checkpoint C:/Users/Adriana Martinez/project_3/project_3.srcs/utils_1/imports/synth_1/prom_initials.dcp is not suitable for use with incremental synthesis for this design. Please regenerate the checkpoint for this design with -incremental_synth switch in the same Vivado session that synth_design has been run. Synthesis will continue with the default flow
+---------------------------------------------------------------------------------
+Finished Doing Graph Differ : Time (s): cpu = 00:00:54 ; elapsed = 00:01:09 . Memory (MB): peak = 1343.176 ; gain = 530.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Preparing Guide Design : Time (s): cpu = 00:00:54 ; elapsed = 00:01:09 . Memory (MB): peak = 1343.176 ; gain = 530.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:55 ; elapsed = 00:01:10 . Memory (MB): peak = 1343.176 ; gain = 530.492
+---------------------------------------------------------------------------------
+
+
+Incremental Synthesis Report Summary:
+
+1. Incremental synthesis run: no
+
+   Reason for not running incremental synthesis : 
+
+
+INFO: [Synth 8-7130] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   10 Bit       Adders := 2     
++---Registers : 
+	               10 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input   10 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3917] design vga_768x576 has port vidon driven by constant 0
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:03 ; elapsed = 00:01:19 . Memory (MB): peak = 1343.176 ; gain = 530.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:28 ; elapsed = 00:01:45 . Memory (MB): peak = 1343.176 ; gain = 530.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:28 ; elapsed = 00:01:45 . Memory (MB): peak = 1343.176 ; gain = 530.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:28 ; elapsed = 00:01:45 . Memory (MB): peak = 1343.176 ; gain = 530.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:43 ; elapsed = 00:02:00 . Memory (MB): peak = 1343.176 ; gain = 530.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:43 ; elapsed = 00:02:01 . Memory (MB): peak = 1343.176 ; gain = 530.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:43 ; elapsed = 00:02:01 . Memory (MB): peak = 1343.176 ; gain = 530.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:43 ; elapsed = 00:02:01 . Memory (MB): peak = 1343.176 ; gain = 530.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:43 ; elapsed = 00:02:01 . Memory (MB): peak = 1343.176 ; gain = 530.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:43 ; elapsed = 00:02:01 . Memory (MB): peak = 1343.176 ; gain = 530.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |BUFG |     1|
+|2     |LUT1 |     2|
+|3     |LUT2 |     4|
+|4     |LUT3 |     3|
+|5     |LUT4 |     3|
+|6     |LUT5 |     7|
+|7     |LUT6 |    17|
+|8     |FDCE |    20|
+|9     |FDRE |     1|
+|10    |IBUF |     2|
+|11    |OBUF |    23|
++------+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:43 ; elapsed = 00:02:01 . Memory (MB): peak = 1343.176 ; gain = 530.492
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 1 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:06 ; elapsed = 00:01:54 . Memory (MB): peak = 1343.176 ; gain = 496.836
+Synthesis Optimization Complete : Time (s): cpu = 00:01:43 ; elapsed = 00:02:01 . Memory (MB): peak = 1343.176 ; gain = 530.492
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1343.176 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1347.559 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 1f8ad03
+INFO: [Common 17-83] Releasing license: Synthesis
+19 Infos, 39 Warnings, 37 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:56 ; elapsed = 00:02:18 . Memory (MB): peak = 1347.559 ; gain = 908.504
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Adriana Martinez/project_3/project_3.runs/synth_1/vga_768x576.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file vga_768x576_utilization_synth.rpt -pb vga_768x576_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Nov 29 00:16:09 2023...
